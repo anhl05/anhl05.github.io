@@ -10,10 +10,27 @@
         <form action="/example.html" method="POST">
 
             <div>
-                <label for="studentname">Full Name:</label>
-                <input type="text" id="studentname" required>
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" required>
             </div>
             <br>
+
+            <div>
+                <label for="studentEmail">University Email:</label>
+                <input type="email" id="studentEmail" required>
+            </div>
+            <br>
+
+            <div>
+                <p>Primary Focus:</p>
+                <input type="radio" id="focus1" name="projectFocus" value="value1" checked>
+                <label for="focus1">Focus1</label>
+                <br>
+
+                <input type="radio" id="focus2" name="projectFocus" value="value2">
+                <label for="focus2">Focus2</label>
+                <br>
+            </div>
 
             <button type="submit">Submit Project"</button>
 

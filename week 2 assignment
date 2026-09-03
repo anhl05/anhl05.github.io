@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <title>Class Schedule</title>
+</head>
+
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="5">An Le's Fall 2026 Class Schedule</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td border="1">Department Code</td>
+                <td>BIOL</td>
+                <td>BIOL</td>
+                <td>CSCE</td>
+                <td>PHIL</td>
+            </tr>
+
+            <tr>
+                <td border="1">Class Number</td>
+                <td>462L</td>
+                <td>462</td>
+                <td>102</td>
+                <td>301</td>
+            </tr>
+
+            <tr>
+                <td border="1">Number of Credits</td>
+                <td>1 C</td>
+                <td>3 C</td>
+                <td>3 C</td>
+                <td>3 C</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+    <h2>Favorite Class Form</h2>
+
+    <form action="/example.html" method="POST">
+
+        <div></div>
+    </form>
+</html>

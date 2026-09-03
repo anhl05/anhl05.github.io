@@ -46,6 +46,36 @@
 
     <form action="/example.html" method="POST">
 
-        <div></div>
+        <div>
+            <label for="studentName">Full Name:</label>
+            <input type="text" id="studentName" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="studentEmail">University Email:</label>
+            <input type="email" id="studentEmail" required>
+        </div>
+        <br>
+
+        <div>
+            <p>Favorite Class:</p>
+            <input type="radio" id="focus1" name="projectFocus" value="value1" checked>
+            <label for="focus1">BIOL 462L</label>
+            <br>
+
+            <input type="radio" id="focus2" name="projectFocus" value="value2">
+            <label for="focus2">BIOL 462</label>
+            <br>
+
+            <input type="radio" id="focus3" name="projectFocus" value="value3>
+            <label for="focus3">CSCE 102</label>
+            <br>
+
+            <input type="radio" id="focus4" name="projectFocus" value="value4"
+            <label for="focus4">PHIL 301</label>
+        </div>
+
+        <button type="submit">Submit</button>
     </form>
 </html>

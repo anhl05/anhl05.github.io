@@ -9,7 +9,7 @@ function depositMoney() {
 
     moneyText.innerText = depositMoney;
 
-    if(depositMoney > 1000)
+    if(depositMoney > 0)
     {
         moneyText.innerText = depositMoney;
         statusText.innerText = "Save More!";

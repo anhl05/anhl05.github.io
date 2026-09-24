@@ -27,34 +27,3 @@ function depositMoney() {
         document.querySelector("button").innerText = "Great Job!";
     }
 }
-
-let withdrawMoney = 1000;
-const moneyAmount = 100;
-
-    function wihtdrawMoney() {
-        withdrawMoney = withdrawMoney - moneyAmount;
-
-        const moneyText = document.getElementById("money-display");
-        const statusText = document.getElementById("status-message");
-
-        moneyText.innerText = withdrawMoney;
-
-        if(withdrawMoney > 0)
-        {
-            moneyText.innerText = depositMoney;
-            statusText.innerText = "Spend More?";
-        }
-        else
-        {
-            moneyText.innerText = 0;
-            statusText.innerText= "No more money...";
-            statusText.style.color = "rgb(238, 255, 142)";
-            statusText.style.fontweight = "bold";
-
-            document.body.style.backgroundColor = #5a1a1a;
-
-            document.querySelector("button").disabled = true;
-            document.querySelector("button").innerText = "Go treat yourself :)";
-        }
-
-}

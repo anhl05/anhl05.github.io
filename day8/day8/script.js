@@ -1,29 +1,29 @@
-let playerHealth = 100;
-const damageAmount = 30;
+let depositMoney = 0;
+const moneyAmount = 100;
 
-function takeDamage() {
-    playerHealth = playerHealth - damageAmount;
+function depositMoney() {
+    depositMoney = depositMoney - moneyAmount;
 
-    const healthText = document.getElementById("health-display");
+    const moneyText = document.getElementById("money-display");
     const statusText = document.getElementById("status-message");
 
-    healthText.innerText = playerHealth;
+    healthText.innerText = depositMoney;
 
-    if(playerHealth > 0)
+    if(depositMoney > 0)
     {
-        healthText.innerText = playerHealth;
-        statusText.innerText = "You've been hit!";
+        healthText.innerText = depositMoney;
+        statusText.innerText = "Save More!";
     }
     else
     {
-        healthText.innerText = 0;
-        statusText.innerText = "Game Over!";
-        statusText.style.color = "#f9331d";
+        healthText.innerText = 1000;
+        statusText.innerText = "Limit Reached!";
+        statusText.style.color = "#00cf00";
         statusText.style.fontWeight = "bold";
 
         document.body.style.backgroundColor = "#5a1a1a";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "Dead";
+        document.querySelector("button").innerText = "Great Job!";
     }
 }

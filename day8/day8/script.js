@@ -30,15 +30,15 @@ function depositMoney() {
     }
 }
 function takeMoney() {
-    withdrawMoney = depositMoney - moneyAmount;
+    depositMoney = depositMoney - moneyAmount;
 
     const moneyText = document.getElementById("money-display");
     const statusText = document.getElementById("status-message");
 
-    moneyText.innerText = withdrawMoney;
+    moneyText.innerText = depositwMoney;
 
 
-    if(withdrawMoney > 0)
+    if(depositMoney > 0)
     { 
         moneyText.innerText = 1000;
         statusText.innerText = "Limit Reached!";

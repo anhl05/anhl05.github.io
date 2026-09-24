@@ -9,7 +9,7 @@ function depositMoney() {
 
     moneyText.innerText = depositMoney;
 
-}
+
 
     if(depositMoney > 0)
     {
@@ -28,7 +28,7 @@ function depositMoney() {
         document.querySelector("button").disabled = true;
         document.querySelector("button").innerText = "Great Job!";
     }
-
+}
 function takeMoney() {
     withdrawMoney = depositMoney - moneyAmount;
 
@@ -36,7 +36,7 @@ function takeMoney() {
     const statusText = document.getElementById("status-message");
 
     moneyText.innerText = withdrawMoney;
-}
+
 
     if(withdrawMoney > 0)
     { 
@@ -50,3 +50,4 @@ function takeMoney() {
         document.querySelector("button").disabled = true;
         document.querySelector("button".innerText = "Great");
     }
+}

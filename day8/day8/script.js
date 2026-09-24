@@ -9,6 +9,16 @@ function depositMoney() {
 
     moneyText.innerText = depositMoney;
 
+function withdrawMoney() {
+    withdrawMoney = depositMoney - moneyAmount;
+
+    const moneyText = document.getElementById("money-display");
+    const statusText = document.getElementById("status-message");
+
+    moneyText.innerText = withdrawMoney;
+    
+}
+
     if(depositMoney > 0)
     {
         moneyText.innerText = depositMoney;

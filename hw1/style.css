@@ -10,8 +10,8 @@ h1, h2 {
 }
 
 #main-header {
-    background-color: rgb(242, 250, 170);
+    background-color: rgb(252, 255, 221);
     color: black;
-    text-align: right;
+    text-align: center;
     border-bottom: 1px solid black;
 }

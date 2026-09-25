@@ -9,8 +9,6 @@ function depositMoney() {
 
     moneyText.innerText = depositMoney;
 
-
-
     if(depositMoney > 0)
     {
         moneyText.innerText = depositMoney;

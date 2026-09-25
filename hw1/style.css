@@ -15,3 +15,17 @@ h1, h2 {
     text-align: center;
     border-bottom: 1px solid black;
 }
+
+table {
+    font-family:'Courier New', Courier, monospace
+    background-color: white;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    font-family:Georgia, 'Times New Roman', Times, serif
+    background-color: pink;
+    color: black;
+    text-align: center;
+}

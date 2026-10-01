@@ -17,7 +17,7 @@ function loadInventory() {
 
         let htmlToInject = "<li>" + currentItem + "</li>";
 
-        listElement += htmlToInject;
+        listElement.innerHTML += htmlToInject;
     }
 
     document.guerySelector("button").disabled = true;

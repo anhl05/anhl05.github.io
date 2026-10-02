@@ -20,7 +20,7 @@ table {
     font-family:'Courier New', Courier, monospace
     background-color: white;
     color: navy;
-    text-align: center;
+    text-align: :left;
 }
 
 form {

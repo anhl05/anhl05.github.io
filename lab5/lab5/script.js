@@ -15,11 +15,11 @@ function withdraw() {
     else
     {
         balanceText.innerText = 0;
-        statusText.innerText = "Limit Reached!";
+        statusText.innerText = "You = Broke";
         document.body.style.backgroundColor = "#5a1a1a";
 
         document.getElementById("withdraw").disabled = true;
-        document.getElementById("withdraw").innerText = "No Money";
+        document.getElementById("withdraw").innerText = "No Mo Money";
     }
 
     balanceText.innerText = bankBalance

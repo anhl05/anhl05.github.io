@@ -1,51 +1,44 @@
-let depositMoney = 0;
-const moneyAmount = 100;
+let bankBalance = 100;
+const withdrawAmount = 50;
+const depositAmount = 50;
 
-function depositMoney() {
-    depositMoney = depositMoney + moneyAmount;
+function withdraw() {
+    bankBalance = bankBalance - withdrawAmount;
 
-    const moneyText = document.getElementById("money-display");
+    const balanceText = document.getElementById("balance-display");
     const statusText = document.getElementById("status-message");
 
-    moneyText.innerText = depositMoney;
-
-    if(depositMoney > 0)
+    if(bankBalance > 0)
     {
-        moneyText.innerText = depositMoney;
-        statusText.innerText = "Save More!";
+       balanceText.innerText = bankBalance;
     }
     else
     {
-        moneyText.innerText = 1000;
+        balanceText.innerText = 0;
         statusText.innerText = "Limit Reached!";
-        statusText.style.color = "#00cf00";
-        statusText.style.fontWeight = "bold";
-
         document.body.style.backgroundColor = "#5a1a1a";
 
-        document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "Great Job!";
+        document.getElementById("withdraw").disabled = true;
+        document.getElementById("withdraw").innerText = "No Money";
     }
+
+    balanceText.innerText = bankBalance
 }
-function takeMoney() {
-    depositMoney = depositMoney - moneyAmount;
 
-    const moneyText = document.getElementById("money-display");
-    const statusText = document.getElementById("status-message");
+function deposit() {
+    if(bankBalance === 0)
+    {
+        const statusText = document.getElementById("status-message");
+        statusText.innerText = "Choose wisely...";
 
-    moneyText.innerText = depositwMoney;
-
-
-    if(depositMoney > 0)
-    { 
-        moneyText.innerText = 1000;
-        statusText.innerText = "Limit Reached!";
-        statusText.style.color = "green";
-        statusText.style.fontWeight = "bold";
-
-        document.body.style.backgroundColor = red;
-
-        document.querySelector("button").disabled = true;
-        document.querySelector("button".innerText = "Great");
+        document.body.style.backgroundColor = #008b8b;
+        document.getElementById("withdraw").disabled = false;
+        document.getElementById("withdraw").innerText = "Withdraw $50";
     }
+
+    bankBalance = bankBalance + despositAmount; 
+
+    const balanceText = document.getElementById("balance-display")
+
+    balanceText.innerText = bankBalance
 }

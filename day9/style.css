@@ -1,0 +1,7 @@
+#checklist li {
+  margin-bottom: 0.8rem;
+  padding: 0.85rem 1rem;
+  background: white;
+  border: 2px solid var(--black);
+  font-size: 1.08rem;
+}

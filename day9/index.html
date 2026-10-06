@@ -6,54 +6,34 @@
     <title>Carolina Game Day Checklist</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <h1>Carolina Game Day Checklist</h1>
     </header>
 
     <main>
-      <section class="checklist-card" aria-labelledby="bag-heading">
-        <h2 id="bag-heading">Add an item to your bag:</h2>
+      <section class="checklist-card">
+        <h2>Add an item to your bag:</h2>
 
         <div class="entry-row">
-          <label class="sr-only" for="item-input">Checklist item</label>
           <input
             id="item-input"
             type="text"
             placeholder="Type an item..."
-            autocomplete="off"
           />
+
           <button id="add-button" type="button">Add to List</button>
         </div>
       </section>
 
-      <section class="list-section" aria-labelledby="list-heading">
-        <h2 id="list-heading">Game Day Essentials</h2>
+      <section class="list-section">
+        <h2>Game Day Essentials</h2>
 
-        <ul id="checklist" aria-live="polite">
-          <li>
-            <label>
-              <input type="checkbox" />
-              <span>Wear garnet and black</span>
-            </label>
-            <button class="remove-button" type="button">×</button>
-          </li>
-
-          <li>
-            <label>
-              <input type="checkbox" />
-              <span>Bring Carolina Card</span>
-            </label>
-            <button class="remove-button" type="button">×</button>
-          </li>
-
-          <li>
-            <label>
-              <input type="checkbox" />
-              <span>Hydrate!</span>
-            </label>
-            <button class="remove-button" type="button">×</button>
-          </li>
+        <ul id="checklist">
+          <li>Wear garnet and black</li>
+          <li>Bring Carolina Card</li>
+          <li>Hydrate!</li>
         </ul>
       </section>
     </main>

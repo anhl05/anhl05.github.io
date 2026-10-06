@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carolina Game Day Checklist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Carolina Game Day Checklist</h1>
+    </header>
+
+    <main>
+      <section class="checklist-card" aria-labelledby="bag-heading">
+        <h2 id="bag-heading">Add an item to your bag:</h2>
+
+        <div class="entry-row">
+          <label class="sr-only" for="item-input">Checklist item</label>
+          <input
+            id="item-input"
+            type="text"
+            placeholder="Type an item..."
+            autocomplete="off"
+          />
+          <button id="add-button" type="button">Add to List</button>
+        </div>
+      </section>
+
+      <section class="list-section" aria-labelledby="list-heading">
+        <h2 id="list-heading">Game Day Essentials</h2>
+
+        <ul id="checklist" aria-live="polite">
+          <li>
+            <label>
+              <input type="checkbox" />
+              <span>Wear garnet and black</span>
+            </label>
+            <button class="remove-button" type="button">×</button>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox" />
+              <span>Bring Carolina Card</span>
+            </label>
+            <button class="remove-button" type="button">×</button>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox" />
+              <span>Hydrate!</span>
+            </label>
+            <button class="remove-button" type="button">×</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -4,39 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carolina Game Day Checklist</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <h1>Carolina Game Day Checklist</h1>
+    <div class="top-stripe"></div>
+
+    <header class="hero">
+      <p class="eyebrow">University of South Carolina</p>
+
+      <h1>Carolina <span>Game Day</span> Checklist</h1>
+
+      <p class="hero-copy">
+        Everything you need for a legendary Saturday in Columbia.
+      </p>
     </header>
 
     <main>
-      <section class="checklist-card">
-        <h2>Add an item to your bag:</h2>
+      <section class="add-card">
+        <div class="card-heading">
+          <div class="bag-icon">✦</div>
+
+          <div>
+            <p class="section-label">Pack your bag</p>
+            <h2>Add a game day essential</h2>
+          </div>
+        </div>
 
         <div class="entry-row">
           <input
             id="item-input"
             type="text"
-            placeholder="Type an item..."
+            placeholder="Ex: Sunglasses, sunscreen, rally towel..."
           />
 
-          <button id="add-button" type="button">Add to List</button>
+          <button id="add-button" type="button">
+            Add to list →
+          </button>
         </div>
       </section>
 
-      <section class="list-section">
-        <h2>Game Day Essentials</h2>
+      <section class="checklist-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Your essentials</p>
+            <h2>Ready for kick-off</h2>
+          </div>
+
+          <p class="item-count">
+            <span id="item-count">3</span> items packed
+          </p>
+        </div>
 
         <ul id="checklist">
-          <li>Wear garnet and black</li>
-          <li>Bring Carolina Card</li>
-          <li>Hydrate!</li>
+          <li>
+            <span class="list-mark">01</span>
+            Wear garnet and black
+          </li>
+
+          <li>
+            <span class="list-mark">02</span>
+            Bring Carolina Card
+          </li>
+
+          <li>
+            <span class="list-mark">03</span>
+            Hydrate!
+          </li>
         </ul>
       </section>
     </main>
+
+    <footer>
+      Forever To Thee <span>•</span> Go Gamecocks
+    </footer>
 
     <script src="script.js"></script>
   </body>

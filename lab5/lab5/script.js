@@ -22,7 +22,7 @@ function withdraw() {
         document.getElementById("withdraw").innerText = "No Mo Money";
     }
 
-    balanceText.innerText = bankBalance
+    balanceText.innerText = bankBalance;
 }
 
 function deposit() {
@@ -38,7 +38,7 @@ function deposit() {
 
     bankBalance = bankBalance + despositAmount; 
 
-    const balanceText = document.getElementById("balance-display")
+    const balanceText = document.getElementById("balance-display");
 
-    balanceText.innerText = bankBalance
+    balanceText.innerText = bankBalance;
 }

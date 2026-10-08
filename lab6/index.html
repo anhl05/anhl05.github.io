@@ -9,31 +9,50 @@
 <body>
   <div class="portal-layout">
     <aside class="sidebar">
-      <div class="brand">
+      <a class="brand" href="index.html" aria-label="Return to homepage">
         <div class="brand-mark">SC</div>
+
         <div>
           <p class="university-name">UNIVERSITY OF SOUTH CAROLINA</p>
           <h1>Student Portal</h1>
         </div>
-      </div>
+      </a>
 
       <nav class="navigation">
         <p class="nav-label">STUDENT RESOURCES</p>
 
-        <button class="nav-button active" data-page="majors">
+        <a
+          class="nav-button"
+          href="https://sc.edu/study/majors_and_degrees/index.php"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span class="nav-icon">◆</span>
-          Majors and Degrees
-        </button>
+          <span>Majors and Degrees</span>
+          <span class="arrow">→</span>
+        </a>
 
-        <button class="nav-button" data-page="organizations">
+        <a
+          class="nav-button"
+          href="https://sc.edu/experience/clubs-organizations/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span class="nav-icon">★</span>
-          Organizations
-        </button>
+          <span>Organizations</span>
+          <span class="arrow">→</span>
+        </a>
 
-        <button class="nav-button" data-page="dining">
+        <a
+          class="nav-button"
+          href="https://sc.edu/about/offices_and_divisions/dining_services/restaurants/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span class="nav-icon">●</span>
-          Dining Halls
-        </button>
+          <span>Dining Halls</span>
+          <span class="arrow">→</span>
+        </a>
       </nav>
 
       <div class="sidebar-footer">
@@ -45,7 +64,7 @@
       <header class="top-bar">
         <div>
           <p class="eyebrow">UNIVERSITY OF SOUTH CAROLINA</p>
-          <h2 id="page-title">Majors and Degrees</h2>
+          <h2>Welcome, Gamecock!</h2>
         </div>
 
         <div class="gamecock-badge">
@@ -54,8 +73,69 @@
         </div>
       </header>
 
-      <section id="page-content">
-        <!-- Content is added here by JavaScript -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <p class="hero-label">WELCOME TO CAROLINA</p>
+          <h3>Where Your Story Begins.</h3>
+          <p>
+            Welcome to the University of South Carolina—home to a vibrant
+            community of scholars, leaders, creators, and lifelong Gamecocks.
+            Your Carolina experience is waiting for you.
+          </p>
+
+          <a class="hero-button" href="#history">Discover Our History</a>
+        </div>
+
+        <div class="hero-letter">C</div>
+      </section>
+
+      <section id="history" class="history-section">
+        <div class="history-heading">
+          <p class="eyebrow">OUR CAROLINA LEGACY</p>
+          <h3>A History Worth Celebrating</h3>
+        </div>
+
+        <div class="history-grid">
+          <article class="history-card">
+            <p class="year">1801</p>
+            <h4>A Carolina Beginning</h4>
+            <p>
+              The University of South Carolina was founded in 1801 as South
+              Carolina College, making it one of the nation’s oldest public
+              universities.
+            </p>
+          </article>
+
+          <article class="history-card">
+            <p class="year">COLUMBIA, SC</p>
+            <h4>Rooted in Our Capital City</h4>
+            <p>
+              Located in the heart of Columbia, UofSC has grown alongside the
+              city while serving students from South Carolina and around the world.
+            </p>
+          </article>
+
+          <article class="history-card">
+            <p class="year">TODAY</p>
+            <h4>Forever to Thee</h4>
+            <p>
+              Today, Carolina is a place where students pursue big goals, build
+              meaningful connections, and carry the Gamecock spirit everywhere.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="explore-section">
+        <div>
+          <p class="eyebrow">EXPLORE YOUR EXPERIENCE</p>
+          <h3>Everything You Need, One Click Away.</h3>
+        </div>
+
+        <p>
+          Use the Student Resources menu to explore UofSC majors, get involved
+          with campus organizations, or find your next favorite place to eat.
+        </p>
       </section>
     </main>
   </div>

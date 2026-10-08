@@ -36,7 +36,7 @@ function deposit() {
         document.getElementById("withdraw").innerText = "Withdraw $50";
     }
 
-    bankBalance = bankBalance + despositAmount; 
+    bankBalance = bankBalance + depositAmount; 
 
     const balanceText = document.getElementById("balance-display");
 

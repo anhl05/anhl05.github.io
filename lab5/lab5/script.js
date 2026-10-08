@@ -31,7 +31,7 @@ function deposit() {
         const statusText = document.getElementById("status-message");
         statusText.innerText = "Choose wisely...";
 
-        document.body.style.backgroundColor = #008b8b;
+        document.body.style.backgroundColor = "#008b8b";
         document.getElementById("withdraw").disabled = false;
         document.getElementById("withdraw").innerText = "Withdraw $50";
     }

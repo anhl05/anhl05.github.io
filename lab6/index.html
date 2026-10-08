@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="portal-layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">SP</div>
+        <h1>Student<br />Portal</h1>
+      </div>
+
+      <nav class="navigation">
+        <p class="nav-label">MENU</p>
+
+        <button class="nav-button active" data-page="schedule">
+          <span class="nav-icon">▣</span>
+          Class Schedule
+        </button>
+
+        <button class="nav-button" data-page="skills">
+          <span class="nav-icon">✦</span>
+          Experiences/Skills
+        </button>
+
+        <button class="nav-button" data-page="about">
+          <span class="nav-icon">●</span>
+          About Me
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Student Success Starts Here</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <div>
+          <p class="welcome-text">WELCOME BACK</p>
+          <h2 id="page-title">Class Schedule</h2>
+        </div>
+
+        <div class="profile">
+          <div>
+            <p class="profile-name">Your Name</p>
+            <p class="profile-role">Student</p>
+          </div>
+          <div class="profile-avatar">YN</div>
+        </div>
+      </header>
+
+      <section id="page-content" class="content-area">
+        <!-- JavaScript places content here -->
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

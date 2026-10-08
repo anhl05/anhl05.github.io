@@ -3,59 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Portal</title>
+  <title>UofSC Student Portal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="portal-layout">
     <aside class="sidebar">
       <div class="brand">
-        <div class="brand-icon">SP</div>
-        <h1>Student<br />Portal</h1>
+        <div class="brand-mark">SC</div>
+        <div>
+          <p class="university-name">UNIVERSITY OF SOUTH CAROLINA</p>
+          <h1>Student Portal</h1>
+        </div>
       </div>
 
       <nav class="navigation">
-        <p class="nav-label">MENU</p>
+        <p class="nav-label">STUDENT RESOURCES</p>
 
-        <button class="nav-button active" data-page="schedule">
-          <span class="nav-icon">▣</span>
-          Class Schedule
-        </button>
+        <a
+          class="nav-button"
+          href="https://sc.edu/study/majors_and_degrees/index.php"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nav-icon">◆</span>
+          <span>Majors and Degrees</span>
+          <span class="arrow">→</span>
+        </a>
 
-        <button class="nav-button" data-page="skills">
-          <span class="nav-icon">✦</span>
-          Experiences/Skills
-        </button>
+        <a
+          class="nav-button"
+          href="https://sc.edu/experience/clubs-organizations/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nav-icon">★</span>
+          <span>Organizations</span>
+          <span class="arrow">→</span>
+        </a>
 
-        <button class="nav-button" data-page="about">
+        <a
+          class="nav-button"
+          href="https://sc.edu/about/offices_and_divisions/dining_services/restaurants/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span class="nav-icon">●</span>
-          About Me
-        </button>
+          <span>Dining Halls</span>
+          <span class="arrow">→</span>
+        </a>
       </nav>
 
       <div class="sidebar-footer">
-        <p>Student Success Starts Here</p>
+        <p>Forever to Thee.</p>
       </div>
     </aside>
 
     <main class="main-content">
       <header class="top-bar">
         <div>
-          <p class="welcome-text">WELCOME BACK</p>
-          <h2 id="page-title">Class Schedule</h2>
+          <p class="eyebrow">WELCOME TO CAMPUS</p>
+          <h2>Discover Life at Carolina</h2>
         </div>
 
-        <div class="profile">
-          <div>
-            <p class="profile-name">Your Name</p>
-            <p class="profile-role">Student</p>
-          </div>
-          <div class="profile-avatar">YN</div>
+        <div class="gamecock-badge">
+          <span>GO</span>
+          <strong>GAMECOCKS</strong>
         </div>
       </header>
 
-      <section id="page-content" class="content-area">
-        <!-- JavaScript places content here -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <p class="hero-label">STUDENT LIFE · ACADEMICS · COMMUNITY</p>
+          <h3>Your Carolina Experience Starts Here.</h3>
+          <p>
+            Find the resources you need to explore academic opportunities,
+            connect with campus organizations, and enjoy everything UofSC has to offer.
+          </p>
+
+          <a
+            class="hero-button"
+            href="https://sc.edu/study/majors_and_degrees/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore Your Path
+          </a>
+        </div>
+
+        <div class="hero-letter">C</div>
+      </section>
+
+      <section class="resource-section">
+        <div class="section-heading">
+          <p class="eyebrow">EXPLORE CAROLINA</p>
+          <h3>Resources for Every Gamecock</h3>
+        </div>
+
+        <div class="resource-grid">
+          <a
+            class="resource-card"
+            href="https://sc.edu/study/majors_and_degrees/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="card-icon">◆</div>
+            <h4>Majors & Degrees</h4>
+            <p>
+              Explore programs, academic pathways, and degree opportunities at UofSC.
+            </p>
+            <span>Learn more →</span>
+          </a>
+
+          <a
+            class="resource-card"
+            href="https://sc.edu/experience/clubs-organizations/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="card-icon">★</div>
+            <h4>Organizations</h4>
+            <p>
+              Connect with fellow students through clubs, leadership, and campus involvement.
+            </p>
+            <span>Get involved →</span>
+          </a>
+
+          <a
+            class="resource-card"
+            href="https://sc.edu/about/offices_and_divisions/dining_services/restaurants/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="card-icon">●</div>
+            <h4>Dining Halls</h4>
+            <p>
+              Find dining locations and explore places to eat across the Carolina campus.
+            </p>
+            <span>Find dining →</span>
+          </a>
+        </div>
       </section>
     </main>
   </div>

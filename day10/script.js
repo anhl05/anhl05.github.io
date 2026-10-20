@@ -46,6 +46,6 @@ function loadData()
     }
     else
     {
-        alrt("No session data found");
+        alert("No session data found");
     }
 }

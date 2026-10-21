@@ -25,12 +25,12 @@ function buyKeyboard()
 
 function buyIntern()
 {
-    if(linesOfCode >= internsCost)
+    if(linesOfCode >= internCost)
     {
-        linesOfCode = linesOfCost - internCost;
+        linesOfCode = linesOfCode - internCost;
         interns = interns + 1;
         internCost = internCost * 1.5;
-        uodateScreen();
+        updateScreen();
     }
 }
 

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"
         <title>Code Clicker</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -23,6 +25,20 @@
                 <p>Active Interns: <span id="intern-display">0</span></p>
                 <button id="upgrade-button" onClick="buyIntern()">
                     Hire Intern (Cost: <span id="cost-intern-display">100</span>)
+                </button>
+
+                <h3>Coffee Shop</h3>
+                <p>Click Power Multiplier: <span id="coffee-display">1x</span></p>
+                <button onclick="buyCoffee()">
+                    Buy Coffee Boost (Cost: <span id="coffee-cost-display">200</span>)
+                </button>
+
+                <h3>AI Department</h3>
+                <p>AI Assistants: <span id="ai-display">0</span></p>
+                <p>AI Production: <span id="ai-power-display">0</span> lines/second</p>
+
+                <button onclick="buyAI()">
+                    Hire AI Assistant (Cost: <span id="ai-cost-display">300</span>)
                 </button>
             </main>
         </div>

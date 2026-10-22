@@ -1,34 +1,66 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkcyan;
+    background-color: rgb(147, 247, 247);
     color: white;
     text-align: center;
-    margin-top: 40px;
+    margin: 0;
+    padding: 40px 15px;
 }
 
 #game-container {
     background-color: darkslategrey;
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 8px 16px black;
+    overflow: hidden;
+}
+
+header {
+    padding: 25px 15px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#score-display {
+    font-size: 26px;
+}
+
+button {
+    font-size: 15px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006060;
 }
 
 #main-button {
     font-size: 24px;
-    padding: 20px, 40px;
+    padding: 20px 40px;
     margin: 20px 0;
     background-color: teal;
-    color: white; 
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
 }
 
 #shop {
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: dimgray;
     padding: 20px;
-    border-radius: 8px;
+}
 
+#shop h3 {
+    margin-top: 25px;
+}
+
+#shop p {
+    margin: 8px 0;
 }

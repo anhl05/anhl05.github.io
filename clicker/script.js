@@ -6,6 +6,13 @@ let upgradeCost= 50;
 let interns = 0;
 let internCost = 100;
 
+let coffeeMultiplier = 1;
+let coffeeCost = 200;
+
+let aiAssistants = 0;
+let aiCost = 300;
+let aiPower = 5;
+
 function writeCode() 
 {
     linesOfCode = linesOfCode + clickPower;
@@ -34,6 +41,28 @@ function buyIntern()
     }
 }
 
+function buyCoffee()
+{
+    if (linesOfCode >= coffeeCost)
+    {
+        linesOfCode = linesOfCode - coffeeCost;
+        coffeeMultiplier = coffeeMultiplier * 2;
+        clickPower = clickPower * 2;
+        coffeeCost = Math.ceil(coffeeCost * 1.5);
+        updateScreen();
+    }
+}
+
+function buyAI()
+{
+    if (linesOfCode >= aiCost)
+    {
+        linesOfCode = linesOfCode - aiCost;
+        aiAssistants = aiAssistants + 1;
+        aiCost = Math.ceil(aiCost * 1.5);
+        updateScreen();
+    }
+}
 
 function updateScreen()
 {
@@ -44,6 +73,13 @@ function updateScreen()
 
     document.getElementById("intern-display").innerText = interns;
     document.getElementById("intern-display-cost").innerText = internCost;
+
+    document.getElementById("coffee-display").innerText = coffeeMultiplier + "x";
+    document.getElementById("coffee-cost-display").innerText = coffeeCost;
+
+    document.getElementById("ai-display").innerText = aiAssistants;
+    document.getElementById("ai-power-display").innerText = aiAssistants * aiPower;
+    document.getElementById("ai-cost-display").innerText = aiCost;
 }
 
 setInterval(function() {

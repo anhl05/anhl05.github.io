@@ -1,66 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(147, 247, 247);
-    color: white;
+    background: #dcf6f5;
+    color: #f0fdfa;
     text-align: center;
     margin: 0;
     padding: 40px 15px;
 }
 
 #game-container {
-    background-color: darkslategrey;
-    max-width: 500px;
+    background: #153b40;
+    max-width: 580px;
     margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px black;
+    border-radius: 22px;
+    box-shadow: 0 16px 40px rgba(15, 60, 65, 0.2);
     overflow: hidden;
 }
 
 header {
-    padding: 25px 15px;
+    padding: 36px 20px 28px;
+    background: linear-gradient(135deg, #153b40, #17666b);
+}
+
+.eyebrow {
+    color: #99f6e4;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 h1 {
-    margin-top: 0;
+    margin: 12px 0;
+    font-size: 38px;
 }
 
 #score-display {
-    font-size: 26px;
+    margin: 20px 0 10px;
+    font-size: 30px;
+    overflow-wrap: anywhere;
+}
+
+header > p:not(.eyebrow) {
+    color: #c3e6e5;
+    font-size: 14px;
 }
 
 button {
-    font-size: 15px;
-    padding: 12px 20px;
-    margin: 10px 0;
-    background-color: teal;
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 14px 18px;
+    margin-top: 12px;
+    background: #0f766e;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
+    line-height: 1.5;
     cursor: pointer;
+    transition:
+        background-color 0.2s,
+        transform 0.1s;
 }
 
-button:hover {
-    background-color: #006060;
+button:hover:not(:disabled) {
+    background: #115e59;
+}
+
+button:active:not(:disabled) {
+    transform: translateY(2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #fbbf24;
+    outline-offset: 4px;
+}
+
+button:disabled {
+    background: #dce7e7;
+    color: #526565;
+    cursor: not-allowed;
 }
 
 #main-button {
-    font-size: 24px;
-    padding: 20px 40px;
-    margin: 20px 0;
-    background-color: teal;
+    width: auto;
+    max-width: 100%;
+    font-size: 23px;
+    padding: 20px 38px;
+    margin-top: 20px;
+    background: #5eead4;
+    color: #123c3c;
+    box-shadow: 0 6px 0 #0f766e;
+}
+
+#main-button:hover {
+    background: #99f6e4;
+}
+
+#main-button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #0f766e;
 }
 
 #shop {
-    margin-top: 10px;
-    background-color: dimgray;
-    padding: 20px;
+    background: #edf7f7;
+    color: #193f43;
+    padding: 26px 22px;
+    text-align: left;
 }
 
-#shop h3 {
-    margin-top: 25px;
+#shop > h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
 }
 
-#shop p {
+.shop-description {
+    margin: 0 0 22px;
+    color: #526b6e;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.upgrade-card {
+    background: white;
+    padding: 22px;
+    margin-top: 16px;
+    border: 1px solid #d4e7e7;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(20, 60, 65, 0.04);
+}
+
+.badge {
+    display: inline-block;
+    background: #ccfbf1;
+    color: #115e59;
+    padding: 5px 9px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.upgrade-card h3 {
+    margin: 12px 0 10px;
+    font-size: 21px;
+}
+
+.upgrade-card p {
     margin: 8px 0;
+    color: #526b6e;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.upgrade-card strong {
+    color: #0f766e;
+}
+
+footer {
+    padding: 20px;
+    color: #b8dedd;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    #score-display {
+        font-size: 25px;
+    }
+
+    #shop {
+        padding: 22px 14px;
+    }
+
+    .upgrade-card {
+        padding: 18px;
+    }
 }

@@ -1,48 +1,112 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0"
-        <title>Code Clicker</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="game-container">
-            <header>
-                <h1>Code Clicker</h1>
-                <h2 id="score-display">0 lines of code</h2>
-                <button id="main-button" onclick="writeCode()">Write Code</button>
-            </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <p class="eyebrow">BUILD YOUR CODING EMPIRE</p>
+            <h1>Code Clicker</h1>
+            <h2 id="score-display">0 lines of code</h2>
 
-            <main id="shop">
-                <h3>Hardware Store (Manual Upgrade)</h3>
-                <p>Current Clicker Power: <span id="power-display">1</span></p>
-                <button id="upgrade-button" onClick="buyKeyboard()">
-                    Buy Mechanical Keyboard (Cost: <span id="cost-display">50</span>)
+            <p>
+                <span id="click-total-display">1</span> per click
+                &bull;
+                <span id="production-display">0</span> per second
+            </p>
+
+            <button id="main-button" onclick="writeCode()">
+                &lt;/&gt; Write Code
+            </button>
+        </header>
+
+        <main id="shop">
+            <h2>Upgrade Your Workspace</h2>
+            <p class="shop-description">
+                Spend your lines of code to build a stronger team.
+            </p>
+
+            <section class="upgrade-card">
+                <span class="badge">CLICK POWER</span>
+                <h3>Hardware Store</h3>
+                <p>
+                    Each mechanical keyboard adds 1 to your base
+                    click power.
+                </p>
+                <p>
+                    Base Click Power:
+                    <strong id="power-display">1</strong>
+                </p>
+
+                <button id="keyboard-button" onclick="buyKeyboard()">
+                    Buy Mechanical Keyboard
+                    (Cost: <span id="cost-display">50</span>)
                 </button>
+            </section>
 
-                <h3>Hiring Department (Auto Clicking)</h3>
-                <p>Active Interns: <span id="intern-display">0</span></p>
-                <button id="upgrade-button" onClick="buyIntern()">
-                    Hire Intern (Cost: <span id="cost-intern-display">100</span>)
+            <section class="upgrade-card">
+                <span class="badge">AUTO CLICKING</span>
+                <h3>Hiring Department</h3>
+                <p>Each intern writes 1 line of code per second.</p>
+                <p>
+                    Active Interns:
+                    <strong id="intern-display">0</strong>
+                </p>
+
+                <button id="intern-button" onclick="buyIntern()">
+                    Hire Intern
+                    (Cost: <span id="cost-intern-display">100</span>)
                 </button>
+            </section>
 
+            <section class="upgrade-card">
+                <span class="badge">CLICK POWER</span>
                 <h3>Coffee Shop</h3>
-                <p>Click Power Multiplier: <span id="coffee-display">1x</span></p>
-                <button onclick="buyCoffee()">
-                    Buy Coffee Boost (Cost: <span id="coffee-cost-display">200</span>)
+                <p>
+                    Each coffee boost doubles your click power.
+                    It also boosts future keyboard upgrades!
+                </p>
+                <p>
+                    Click Power Multiplier:
+                    <strong id="coffee-display">1x</strong>
+                </p>
+
+                <button id="coffee-button" onclick="buyCoffee()">
+                    Buy Coffee Boost
+                    (Cost: <span id="coffee-cost-display">200</span>)
                 </button>
+            </section>
 
-                <h3>AI Department</h3>
-                <p>AI Assistants: <span id="ai-display">0</span></p>
-                <p>AI Production: <span id="ai-power-display">0</span> lines/second</p>
+            <section class="upgrade-card">
+                <span class="badge">AUTO CLICKING</span>
+                <h3>Senior Developer Team</h3>
+                <p>
+                    Each senior developer writes 5 lines of code
+                    per second.
+                </p>
+                <p>
+                    Active Senior Developers:
+                    <strong id="developer-display">0</strong>
+                </p>
+                <p>
+                    Developer Production:
+                    <strong id="developer-production-display">0</strong>
+                    lines/second
+                </p>
 
-                <button onclick="buyAI()">
-                    Hire AI Assistant (Cost: <span id="ai-cost-display">300</span>)
+                <button id="developer-button" onclick="buyDeveloper()">
+                    Hire Senior Developer
+                    (Cost: <span id="developer-cost-display">300</span>)
                 </button>
-            </main>
-        </div>
+            </section>
+        </main>
 
-        <script src="script.js"></script>
-    </body>
+        <footer>Click. Upgrade. Keep coding.</footer>
+    </div>
+</body>
 </html>
